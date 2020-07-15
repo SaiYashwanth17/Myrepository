@@ -1,1 +1,2 @@
-
+Sudoku is a very popular game. Solving it is not a linear process, we have to keep adding values and simuoltaneously check them. This requires various trial and error steps.
+So I used backtracking to create a Sudoku Solver. This will check the values by assigning them to a particular position and if reaches a dead end (i.e., when it cannot proceed any further, mostly because there is no number which satisfies the conditions), it will backtrack and try a different possibility.This process continues until there are no empty spaces left.
