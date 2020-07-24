@@ -1,9 +1,14 @@
 # Input
 import numpy as np
+
 grid = []
 print("Give empty spaces as zeros")
 for _ in range(9):
-    row = list(map(int, input("Row - {}: ".format(_+1)).strip().split()))
+        row = list(map(int, input("Row - {}: ".format(_+1)).strip().split() ))
+    for num in row:
+        if num < 0 or num > 9:
+            print("***INVALID ENTRIES FOUND***")
+            exit()
     grid.append(row)
 
 
@@ -35,7 +40,6 @@ def solve():
                 return
     print("\nYAY!!\n")
     print(np.matrix(grid))
-
 
 # Calling Solve function
 solve()
