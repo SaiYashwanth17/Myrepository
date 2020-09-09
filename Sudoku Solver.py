@@ -1,6 +1,6 @@
-# Input
 import numpy as np
 
+# Input
 grid = []
 print("Give empty spaces as zeros")
 for _ in range(9):
